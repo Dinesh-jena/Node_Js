@@ -209,3 +209,20 @@
 // });
 
 // emitter.emit('error', new Error('Something went wrong'));
+
+//TOPIC:-9
+
+const {Readable} = require('stream');
+
+const inStream = new Readable({
+    read() {
+
+    }
+})
+
+inStream.push('Dinehs jena:');
+inStream.push("kya batt hai");
+
+inStream.push(null);
+
+inStream.pipe(process.stdout);
