@@ -1,0 +1,57 @@
+// app.all("/users/:id/:product_id", (req, res) => {
+
+//     console.log("Route Params:", req.params);
+//     console.log("Route Params id:", req.params.id);
+//     console.log("Route Params product_id:", req.params.product_id);
+//     console.log("Query Params:", req.query);
+//     console.log("Request Body:", req.body);
+//     console.log("Headers:", req.headers);
+//     console.log("HTTP Method:", req.method);
+//     console.log("URL:", req.url);
+
+//     res.status(200).json({
+//         message: "Request Object Demo",
+//         params: req.params,
+//         id:req.params.id,
+//         product_id:req.params.product_id,
+//         query: req.query,
+//         body: req.body,
+//         method: req.method,
+//         url: req.url,
+//         headers: req.headers
+//     });
+
+// });
+
+
+// app.get("/response-demo", (req, res) => {
+
+    // 1. Send Text
+    // res.send("Hello Express");
+
+    // 2. Send JSON
+    // res.json({
+    //     message: "Success",
+    //     name: "Dinesh"
+    // });
+
+    // 3. Send Status + JSON
+    // res.status(200).json({
+    //     message: "Data Fetched Successfully"
+    // });
+
+    // 4. Send Status Only
+    // res.sendStatus(404);
+
+    // 5. Redirect
+    // res.redirect("https://google.com");
+
+    // 6. Download File
+    // res.download("./sample.pdf");
+
+// });
+
+
+// app.get("/search", (req, res) => {
+//     res.json(req.query);
+// });
